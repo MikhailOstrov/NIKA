@@ -1,4 +1,3 @@
-/* Определения понятий и отношений вынесены в каталоги concepts и relations. */
 concept_phrase_unknown_hunting_habitat
 => nrel_note: [Класс статических ответов, сообщающих об отсутствии связи nrel_habitat в графе.] (* <- lang_ru;; *);;
 

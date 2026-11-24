@@ -1,1 +1,410 @@
-/* Определения понятий и отношений вынесены в каталоги concepts и relations. */
+/* Consolidated view: concept definitions and explanatory notes. */
+
+/* Source: concepts/concept_ammunition.scs */
+
+concept_ammunition
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничий боеприпас] (* <- lang_ru;; *);;
+
+concept_ammunition
+=> nrel_note: [Обобщённая категория боеприпасов без технических инструкций.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_bait.scs */
+
+concept_bait
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [приманка и манок] (* <- lang_ru;; *);;
+
+concept_bait
+=> nrel_note: [Предмет или средство, применяемое для привлечения внимания животного.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_bird.scs */
+
+concept_bird
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting_animal;
+=> nrel_main_idtf: [птица] (* <- lang_ru;; *);;
+
+concept_bird
+=> nrel_note: [Охотничье животное, относящееся к птицам.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_equipment.scs */
+
+concept_equipment
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничье снаряжение] (* <- lang_ru;; *);;
+
+concept_equipment
+=> nrel_note: [Снаряжение, помогающее наблюдать, перемещаться и поддерживать безопасность.] (* <- lang_ru;; *);;
+
+concept_equipment <= nrel_inclusion: concept_hunting_object;;
+
+/* Source: concepts/concept_forest_game_bird.scs */
+
+concept_forest_game_bird <- sc_node_class;
+<= nrel_inclusion: concept_bird;
+=> nrel_main_idtf: [боровая охотничья птица] (* <- lang_ru;; *);
+=> nrel_note: [Учебная группа боровой дичи, включая глухаря, тетерева, рябчика и вальдшнепа; источник: Белгосохота, с. 7.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_habitat.scs */
+
+concept_habitat
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [место обитания] (* <- lang_ru;; *);;
+
+concept_habitat
+=> nrel_note: [Тип природного места, в котором обычно наблюдается животное.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting.scs */
+
+concept_hunting
+<- sc_node_class;
+=> nrel_main_idtf:
+    [охота]
+    (* <- lang_ru;; *);
+    [hunting]
+    (* <- lang_en;; *);
+=> nrel_note:
+    [Учебная предметная область о видах охоты, животных, снаряжении, методах, местах обитания и безопасности.]
+    (* <- lang_ru;; *);;
+
+concept_hunting
+=> nrel_note: [Система понятий о подготовке, проведении и безопасном сопровождении охоты.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_animal.scs */
+
+concept_hunting_animal
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf:
+    [охотничье животное]
+    (* <- lang_ru;; *);;
+
+concept_hunting_animal
+=> nrel_note: [Животное, рассматриваемое как объект наблюдения или охотничьей деятельности.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_area.scs */
+
+concept_hunting_area
+<- sc_node_class;
+<= nrel_inclusion: concept_habitat;
+=> nrel_main_idtf: [охотничья местность] (* <- lang_ru;; *);;
+
+concept_hunting_area
+=> nrel_note: [Тип местности, используемый для описания местообитания.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_biology_description.scs */
+
+concept_hunting_biology_description <- sc_node_class;
+=> nrel_main_idtf: [биологическая характеристика животного] (* <- lang_ru;; *);
+=> nrel_note: [Краткое биологическое описание вида для учебной базы.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_breeding_period.scs */
+
+concept_hunting_breeding_period <- sc_node_class;
+=> nrel_main_idtf: [период размножения животного] (* <- lang_ru;; *);
+=> nrel_note: [Обобщённое время гона, токования или образования пар по учебному источнику.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_carnivore.scs */
+
+concept_hunting_carnivore <- sc_node_class;
+<= nrel_inclusion: concept_mammal;
+=> nrel_main_idtf: [хищное млекопитающее] (* <- lang_ru;; *);
+=> nrel_note: [Учебная группа охотничьих млекопитающих из отряда хищных.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_dog.scs */
+
+concept_hunting_dog
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничья собака] (* <- lang_ru;; *);;
+
+concept_hunting_dog
+=> nrel_note: [Собака, подготовленная для поиска, преследования или подачи объекта охоты.] (* <- lang_ru;; *);;
+
+concept_hunting_dog <= nrel_inclusion: concept_hunting_object;;
+
+/* Source: concepts/concept_hunting_ethics.scs */
+
+concept_hunting_ethics
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничья этика] (* <- lang_ru;; *);;
+
+concept_hunting_ethics
+=> nrel_note: [Принципы ответственного отношения к природе, животным и другим людям.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_group_description.scs */
+
+concept_hunting_group_description <- sc_node_class;
+=> nrel_main_idtf: [описание группы охотничьих животных] (* <- lang_ru;; *);
+=> nrel_note: [Краткое учебное описание класса или группы животных.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_lagomorph.scs */
+
+concept_hunting_lagomorph <- sc_node_class;
+<= nrel_inclusion: concept_mammal;
+=> nrel_main_idtf: [зайцеобразное] (* <- lang_ru;; *);
+=> nrel_note: [Учебная группа охотничьих животных из отряда зайцеобразных.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_license.scs */
+
+concept_hunting_license
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [разрешительный документ для охоты] (* <- lang_ru;; *);;
+
+concept_hunting_license
+=> nrel_note: [Учебная категория разрешительных документов; конкретные региональные нормы не моделируются.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_method.scs */
+
+concept_hunting_method
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничий метод] (* <- lang_ru;; *);;
+
+concept_hunting_method
+=> nrel_note: [Способ поиска, наблюдения и добычи объекта охоты.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_method_description.scs */
+
+concept_hunting_method_description <- sc_node_class;
+=> nrel_main_idtf: [описание способа охоты] (* <- lang_ru;; *);
+=> nrel_note: [Краткое определение способа охоты из учебного источника.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_object.scs */
+
+concept_hunting_object <- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [объект или правило предметной области охоты] (* <- lang_ru;; *);
+=> nrel_note: [Учебная группа снаряжения, оружия, охотничьих собак и правил безопасности.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_object_description.scs */
+
+concept_hunting_object_description <- sc_node_class;
+=> nrel_main_idtf: [характеристика объекта предметной области] (* <- lang_ru;; *);
+=> nrel_note: [Учебное пояснение назначения объекта или содержания правила.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_season.scs */
+
+concept_hunting_season
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничий сезон] (* <- lang_ru;; *);;
+
+concept_hunting_season
+=> nrel_note: [Период, в который для конкретного вида деятельности действуют заданные условия.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_team.scs */
+
+concept_hunting_team
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [группа участников охоты] (* <- lang_ru;; *);;
+
+concept_hunting_team
+=> nrel_note: [Условная группа участников, связанная с коллективным методом.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_type.scs */
+
+concept_hunting_type
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [вид охоты] (* <- lang_ru;; *);;
+
+concept_hunting_type
+=> nrel_note: [Форма организации охоты по числу и взаимодействию участников.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_hunting_ungulate.scs */
+
+/* Учебные сведения по материалам Белгосохоты, PDF 2026 года.
+   Номера в примечаниях — страницы предоставленного пользователем PDF.
+   Периоды размножения животных не являются сроками разрешённой охоты. */
+
+concept_hunting_ungulate <- sc_node_class;
+<= nrel_inclusion: concept_mammal;
+=> nrel_main_idtf: [копытное охотничье животное] (* <- lang_ru;; *);
+=> nrel_note: [Учебная группа копытных охотничьих животных; источник: Белгосохота, с. 7.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_large_game_animal.scs */
+
+concept_large_game_animal
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting_animal;
+=> nrel_main_idtf: [крупное охотничье животное] (* <- lang_ru;; *);;
+
+concept_large_game_animal
+=> nrel_note: [Условная учебная категория крупных животных предметной области.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_mammal.scs */
+
+concept_mammal
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting_animal;
+=> nrel_main_idtf: [млекопитающее] (* <- lang_ru;; *);;
+
+concept_mammal
+=> nrel_note: [Охотничье животное, относящееся к классу млекопитающих.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_safety.scs */
+
+concept_safety
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [безопасность на охоте] (* <- lang_ru;; *);;
+
+concept_safety
+=> nrel_note: [Правило, снижающее риск травм, потери ориентации и иных опасных ситуаций.] (* <- lang_ru;; *);;
+
+concept_safety <= nrel_inclusion: concept_hunting_object;;
+
+/* Source: concepts/concept_small_game_animal.scs */
+
+concept_small_game_animal
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting_animal;
+=> nrel_main_idtf: [мелкое охотничье животное] (* <- lang_ru;; *);;
+
+concept_small_game_animal
+=> nrel_note: [Условная учебная категория небольших животных предметной области.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_tracking_sign.scs */
+
+concept_tracking_sign
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [признак присутствия животного] (* <- lang_ru;; *);;
+
+concept_tracking_sign
+=> nrel_note: [Общий признак, по которому можно обсуждать присутствие животного.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_waterfowl.scs */
+
+concept_waterfowl
+<- sc_node_class;
+<= nrel_inclusion: concept_bird;
+=> nrel_main_idtf: [водоплавающая птица] (* <- lang_ru;; *);;
+
+concept_waterfowl
+=> nrel_note: [Водоплавающие птицы, рассматриваемые в учебном графе.] (* <- lang_ru;; *);;
+
+/* Source: concepts/concept_weapon.scs */
+
+concept_weapon
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничье оружие] (* <- lang_ru;; *);;
+
+concept_weapon
+=> nrel_note: [Охотничье оружие, используемое только с соблюдением требований безопасности и закона.] (* <- lang_ru;; *);;
+
+concept_weapon <= nrel_inclusion: concept_hunting_object;;
+
+/* Source: definitions.scs */
+
+concept_phrase_unknown_hunting_habitat
+=> nrel_note: [Класс статических ответов, сообщающих об отсутствии связи nrel_habitat в графе.] (* <- lang_ru;; *);;
+
+sample_hunting_permit
+=> nrel_note: [Абстрактный учебный экземпляр, не являющийся действующим разрешением.] (* <- lang_ru;; *);;
+
+hare_tracks
+=> nrel_note: [Учебный пример общего признака присутствия зайца.] (* <- lang_ru;; *);;
+
+duck_call_sign
+=> nrel_note: [Учебный пример голосового признака водоплавающей птицы.] (* <- lang_ru;; *);;
+
+hunting_team
+=> nrel_note: [Условный участник предметной модели без реальных персональных данных.] (* <- lang_ru;; *);;
+
+shotgun_shell
+=> nrel_note: [Обобщённый тип боеприпаса; параметры и порядок применения не рассматриваются.] (* <- lang_ru;; *);;
+
+rifle_cartridge
+=> nrel_note: [Обобщённый тип боеприпаса; параметры и порядок применения не рассматриваются.] (* <- lang_ru;; *);;
+
+autumn_hunt_case
+=> nrel_note: [Абстрактный пример для связей предметной области, не календарная рекомендация.] (* <- lang_ru;; *);;
+
+elk
+=> nrel_note: [Крупное лесное млекопитающее; в учебном графе связано с лесом и охотой с подхода.] (* <- lang_ru;; *);;
+
+wild_boar
+=> nrel_note: [Крупное млекопитающее; в учебном графе связано с лесом и загонной охотой.] (* <- lang_ru;; *);;
+
+roe_deer
+=> nrel_note: [Лесное млекопитающее; в учебном графе связано с охотой с подхода.] (* <- lang_ru;; *);;
+
+red_deer
+=> nrel_note: [Крупное млекопитающее; в учебном графе связано с лесным местообитанием.] (* <- lang_ru;; *);;
+
+hare
+=> nrel_note: [Небольшое млекопитающее; в учебном графе связано с полем и охотой по следу.] (* <- lang_ru;; *);;
+
+fox
+=> nrel_note: [Хищное млекопитающее; в учебном графе связано с лесом и засадой.] (* <- lang_ru;; *);;
+
+duck
+=> nrel_note: [Водоплавающая птица; в учебном графе связана с водоёмом и манком.] (* <- lang_ru;; *);;
+
+goose
+=> nrel_note: [Водоплавающая птица; в учебном графе связана с водоёмом и чучелом.] (* <- lang_ru;; *);;
+
+stalking_hunt
+=> nrel_note: [Метод охоты, основанный на осторожном приближении к объекту наблюдения.] (* <- lang_ru;; *);;
+
+hunting_from_ambush
+=> nrel_note: [Метод ожидания объекта в заранее выбранном укрытии.] (* <- lang_ru;; *);;
+
+driven_hunt
+=> nrel_note: [Коллективный метод с согласованными ролями участников и повышенными требованиями к безопасности.] (* <- lang_ru;; *);;
+
+tracking_hunt
+=> nrel_note: [Метод поиска по следам и другим признакам присутствия животного.] (* <- lang_ru;; *);;
+
+bird_hunting
+=> nrel_note: [Учебный класс методов наблюдения за птицами с применением подходящего снаряжения.] (* <- lang_ru;; *);;
+
+hunting_with_dog
+=> nrel_note: [Метод, при котором подготовленная собака помогает искать или обнаруживать объект.] (* <- lang_ru;; *);;
+
+shotgun
+=> nrel_note: [Гладкоствольное охотничье оружие; в учебном графе связано с охотой на птицу.] (* <- lang_ru;; *);;
+
+rifle
+=> nrel_note: [Нарезное охотничье оружие; в учебном графе связано с крупными млекопитающими.] (* <- lang_ru;; *);;
+
+binoculars
+=> nrel_note: [Оптический прибор для наблюдения на расстоянии.] (* <- lang_ru;; *);;
+
+camouflage_clothing
+=> nrel_note: [Одежда, помогающая уменьшить заметность наблюдателя.] (* <- lang_ru;; *);;
+
+hunting_stand
+=> nrel_note: [Оборудованное место ожидания, из которого ведётся наблюдение.] (* <- lang_ru;; *);;
+
+radio_station
+=> nrel_note: [Средство связи для согласования действий участников группы.] (* <- lang_ru;; *);;
+
+compass
+=> nrel_note: [Навигационный прибор для определения направления движения.] (* <- lang_ru;; *);;
+
+duck_decoy
+=> nrel_note: [Манок, используемый в учебном графе для привлечения внимания утки.] (* <- lang_ru;; *);;
+
+bird_decoy
+=> nrel_note: [Имитация птицы, используемая как визуальный ориентир.] (* <- lang_ru;; *);;
+
+firearm_safety
+=> nrel_note: [Комплекс правил безопасного обращения с оружием до, во время и после выхода.] (* <- lang_ru;; *);;
+
+group_safety
+=> nrel_note: [Правила согласования действий и безопасных направлений в группе.] (* <- lang_ru;; *);;
+
+navigation_safety
+=> nrel_note: [Правила сохранения маршрута, связи и ориентации на местности.] (* <- lang_ru;; *);;

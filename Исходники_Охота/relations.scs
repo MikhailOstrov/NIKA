@@ -1,1 +1,305 @@
-/* Определения понятий и отношений вынесены в каталоги concepts и relations. */
+/* Consolidated view of all hunting-domain relation definitions. */
+
+/* Source: relations/nrel_activity_time.scs */
+
+nrel_activity_time
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [активен в период] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_animal;
+=> nrel_second_domain: concept_hunting_season;
+=> nrel_definitional_domain: { concept_hunting_animal; concept_hunting_season };
+=> nrel_note: [Связывает животное с периодом, в котором наблюдается его активность; связь не исключает активность в другие сезоны.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_ammunition.scs */
+
+nrel_ammunition
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [использует тип боеприпаса] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_weapon;
+=> nrel_second_domain: concept_ammunition;
+=> nrel_definitional_domain: { concept_weapon; concept_ammunition };
+=> nrel_note: [Связывает категорию оружия с общим типом боеприпаса.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_bait.scs */
+
+nrel_bait
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [использует приманку] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_method;
+=> nrel_second_domain: concept_bait;
+=> nrel_definitional_domain: { concept_hunting_method; concept_bait };
+=> nrel_note: [Связывает метод с используемой в учебном примере приманкой.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_dog.scs */
+
+nrel_dog
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [использует охотничью собаку] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_method;
+=> nrel_second_domain: concept_hunting_dog;
+=> nrel_definitional_domain: { concept_hunting_method; concept_hunting_dog };
+=> nrel_note: [Связывает метод с типом охотничьей собаки.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_equipment.scs */
+
+nrel_equipment
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [требует снаряжение] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_method;
+=> nrel_second_domain: concept_equipment;
+=> nrel_definitional_domain: { concept_hunting_method; concept_equipment };
+=> nrel_note: [Указывает снаряжение, связанное с методом.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_habitat.scs */
+
+nrel_habitat
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [обитает в] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_animal;
+=> nrel_second_domain: concept_habitat;
+=> nrel_definitional_domain: { concept_hunting_animal; concept_habitat };
+=> nrel_note: [Связывает животное с типом места его обитания.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_hunting_animal_group.scs */
+
+nrel_hunting_animal_group <- sc_node_non_role_relation;
+<- relation; <- binary_relation; <- oriented_relation;
+<- antireflexive_relation; <- asymmetric_relation; <- antitransitive_relation;
+=> nrel_main_idtf: [относится к группе охотничьих животных] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_animal;
+=> nrel_second_domain: sc_node_class;
+=> nrel_definitional_domain: { concept_hunting_animal; sc_node_class };
+=> nrel_note: [Связывает животное с учебной группой для ответа о классификации.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_hunting_animal_profile.scs */
+
+nrel_hunting_animal_profile <- sc_node_non_role_relation;
+<- relation; <- binary_relation; <- oriented_relation;
+<- antireflexive_relation; <- asymmetric_relation; <- antitransitive_relation;
+=> nrel_main_idtf: [имеет биологическую характеристику] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_animal;
+=> nrel_second_domain: concept_hunting_biology_description;
+=> nrel_definitional_domain: { concept_hunting_animal; concept_hunting_biology_description };
+=> nrel_note: [Связывает животное с краткой характеристикой вида из учебного источника.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_hunting_breeding_period.scs */
+
+nrel_hunting_breeding_period <- sc_node_non_role_relation;
+<- relation; <- binary_relation; <- oriented_relation;
+<- antireflexive_relation; <- asymmetric_relation; <- antitransitive_relation;
+=> nrel_main_idtf: [имеет период размножения] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_animal;
+=> nrel_second_domain: concept_hunting_breeding_period;
+=> nrel_definitional_domain: { concept_hunting_animal; concept_hunting_breeding_period };
+=> nrel_note: [Связывает животное с периодом гона, токования или образования пар.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_hunting_group_description.scs */
+
+nrel_hunting_group_description <- sc_node_non_role_relation;
+<- relation; <- binary_relation; <- oriented_relation;
+<- antireflexive_relation; <- asymmetric_relation; <- antitransitive_relation;
+=> nrel_main_idtf: [имеет описание группы охотничьих животных] (* <- lang_ru;; *);
+=> nrel_first_domain: sc_node_class;
+=> nrel_second_domain: concept_hunting_group_description;
+=> nrel_definitional_domain: { sc_node_class; concept_hunting_group_description };
+=> nrel_note: [Связывает класс животных с его кратким описанием.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_hunting_method.scs */
+
+nrel_hunting_method
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [связан с методом охоты] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_animal;
+=> nrel_second_domain: concept_hunting_method;
+=> nrel_definitional_domain: { concept_hunting_animal; concept_hunting_method };
+=> nrel_note: [Указывает учебные методы, рассматриваемые для животного.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_hunting_method_description.scs */
+
+nrel_hunting_method_description <- sc_node_non_role_relation;
+<- relation; <- binary_relation; <- oriented_relation;
+<- antireflexive_relation; <- asymmetric_relation; <- antitransitive_relation;
+=> nrel_main_idtf: [имеет описание способа охоты] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_method;
+=> nrel_second_domain: concept_hunting_method_description;
+=> nrel_definitional_domain: { concept_hunting_method; concept_hunting_method_description };
+=> nrel_note: [Связывает способ охоты с его кратким учебным описанием.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_hunting_object_description.scs */
+
+nrel_hunting_object_description <- sc_node_non_role_relation;
+<- relation; <- binary_relation; <- oriented_relation;
+<- antireflexive_relation; <- asymmetric_relation; <- antitransitive_relation;
+=> nrel_main_idtf: [имеет описание объекта охоты] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_object;
+=> nrel_second_domain: concept_hunting_object_description;
+=> nrel_definitional_domain: { concept_hunting_object; concept_hunting_object_description };
+=> nrel_note: [Связывает учебный объект или правило с описанием его назначения.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_hunting_team.scs */
+
+nrel_hunting_team
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [организуется группой] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_method;
+=> nrel_second_domain: concept_hunting_team;
+=> nrel_definitional_domain: { concept_hunting_method; concept_hunting_team };
+=> nrel_note: [Связывает коллективный метод с группой участников.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_hunting_type.scs */
+
+nrel_hunting_type
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [относится к виду охоты] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_method;
+=> nrel_second_domain: concept_hunting_type;
+=> nrel_definitional_domain: { concept_hunting_method; concept_hunting_type };
+=> nrel_note: [Связывает метод с формой организации охоты.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_license_required.scs */
+
+nrel_license_required
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [связан с разрешительным документом] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_method;
+=> nrel_second_domain: concept_hunting_license;
+=> nrel_definitional_domain: { concept_hunting_method; concept_hunting_license };
+=> nrel_note: [Обозначает учебную связь метода с категорией разрешительных документов без описания региональных норм.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_safety_rule.scs */
+
+nrel_safety_rule
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [требует соблюдения правила безопасности] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_method;
+=> nrel_second_domain: concept_safety;
+=> nrel_definitional_domain: { concept_hunting_method; concept_safety };
+=> nrel_note: [Связывает метод с общим правилом безопасности.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_tracking_sign.scs */
+
+nrel_tracking_sign
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [имеет признаки присутствия] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_animal;
+=> nrel_second_domain: concept_tracking_sign;
+=> nrel_definitional_domain: { concept_hunting_animal; concept_tracking_sign };
+=> nrel_note: [Связывает животное с общим признаком его присутствия.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_used_for.scs */
+
+nrel_used_for
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [предназначено для охоты на] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_weapon;
+=> nrel_second_domain: concept_hunting_animal;
+=> nrel_definitional_domain: { concept_weapon; concept_hunting_animal };
+=> nrel_note: [Связывает категорию оружия с животным в учебном примере.] (* <- lang_ru;; *);;
+
+/* Source: relations/nrel_weapon.scs */
+
+nrel_weapon
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [использует оружие] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_method;
+=> nrel_second_domain: concept_weapon;
+=> nrel_definitional_domain: { concept_hunting_method; concept_weapon };
+=> nrel_note: [Связывает метод с категорией оружия, упомянутой в учебном графе.] (* <- lang_ru;; *);;
+
+/* Source: relations/rrel_entity_hunting.scs */
+
+rrel_entity_hunting
+<- sc_node_role_relation;
+<- relation;
+<- role_relation;
+<- binary_relation;
+=> nrel_main_idtf: [сущность охоты] (* <- lang_ru;; *);
+=> nrel_wit_ai_idtf: [rrel_entity];
+=> nrel_first_domain: concept_hunting;
+=> nrel_second_domain: concept_hunting_animal;
+=> nrel_definitional_domain: { concept_hunting; concept_hunting_animal };
+=> nrel_note: [Роль животного в учебном примере охоты.] (* <- lang_ru;; *);;

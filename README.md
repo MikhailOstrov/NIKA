@@ -65,7 +65,7 @@ docker compose -f docker-compose.yml -f docker-compose.lab.yml -f docker-compose
 
 ### Лабораторная 1 — предметная область и граф знаний
 
-Начните с [subject_domain.scs](knowledge-base/extra/hunting/subject_domain.scs), [relations.scs](knowledge-base/extra/hunting/relations.scs), [instances.scs](knowledge-base/extra/hunting/instances.scs) и [book_facts.scs](knowledge-base/extra/hunting/book_facts.scs). Классы и определения распределены также по каталогам `concepts/` и `relations/`.
+Для быстрого просмотра конечных определений откройте сводные [subject_domain.scs](Исходники_Охота/subject_domain.scs) и [relations.scs](Исходники_Охота/relations.scs). В рабочей базе NIKA понятия и отношения организованы модульно: [файлы понятий](knowledge-base/extra/hunting/concepts/) и [файлы отношений](knowledge-base/extra/hunting/relations/). Экземпляры и факты находятся в [instances.scs](knowledge-base/extra/hunting/instances.scs) и [book_facts.scs](knowledge-base/extra/hunting/book_facts.scs).
 
 Покажите в SC Web, как экземпляр животного связан с классом и фактами: например, лося с группой копытных, местом обитания и периодом размножения.
 
