@@ -1,0 +1,286 @@
+/* Определения понятий и отношений вынесены в каталоги concepts и relations. */
+elk <- concept_hunting_ungulate;
+=> nrel_hunting_animal_group: concept_hunting_ungulate;
+=> nrel_hunting_animal_profile: elk_biology_profile;
+=> nrel_hunting_breeding_period: elk_breeding_period;;
+
+elk_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [крупнейший представитель оленьих, летом предпочитающий влажные и заболоченные леса] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, материалы к охотничьему экзамену, с. 19 PDF.] (* <- lang_ru;; *);;
+
+elk_breeding_period <- concept_hunting_breeding_period;
+=> nrel_main_idtf: [сентябрь — начало октября] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 19 PDF: период гона лося.] (* <- lang_ru;; *);;
+
+wild_boar <- concept_hunting_ungulate;
+=> nrel_hunting_animal_group: concept_hunting_ungulate;
+=> nrel_hunting_animal_profile: wild_boar_biology_profile;
+=> nrel_hunting_breeding_period: wild_boar_breeding_period;;
+
+wild_boar_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [всеядное парнокопытное семейства свиней, предпочитающее леса с густым подлеском] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 15 PDF.] (* <- lang_ru;; *);;
+
+wild_boar_breeding_period <- concept_hunting_breeding_period;
+=> nrel_main_idtf: [декабрь — январь] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 16 PDF: период гона кабана.] (* <- lang_ru;; *);;
+
+roe_deer <- concept_hunting_ungulate;
+=> nrel_hunting_animal_group: concept_hunting_ungulate;
+=> nrel_hunting_animal_profile: roe_deer_biology_profile;
+=> nrel_hunting_breeding_period: roe_deer_breeding_period;;
+
+roe_deer_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [небольшое парнокопытное семейства оленьих, предпочитающее разреженные леса и кустарники] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 16–17 PDF.] (* <- lang_ru;; *);;
+
+roe_deer_breeding_period <- concept_hunting_breeding_period;
+=> nrel_main_idtf: [преимущественно июль — август] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 17 PDF: период гона европейской косули.] (* <- lang_ru;; *);;
+
+red_deer <- concept_hunting_ungulate;
+=> nrel_hunting_animal_group: concept_hunting_ungulate;
+=> nrel_hunting_animal_profile: red_deer_biology_profile;
+=> nrel_hunting_breeding_period: red_deer_breeding_period;;
+
+red_deer_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [представитель оленьих, обитающий в широколиственных и смешанных лесах] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 21 PDF: олень благородный.] (* <- lang_ru;; *);;
+
+red_deer_breeding_period <- concept_hunting_breeding_period;
+=> nrel_main_idtf: [сентябрь — начало октября] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 21 PDF: период гона благородного оленя.] (* <- lang_ru;; *);;
+
+fox <- concept_hunting_carnivore;
+=> nrel_hunting_animal_group: concept_hunting_carnivore;
+=> nrel_hunting_animal_profile: fox_biology_profile;
+=> nrel_hunting_breeding_period: fox_breeding_period;;
+
+fox_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [хищник семейства псовых, предпочитающий сочетание лесных и сельскохозяйственных угодий] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 32 PDF: лисица обыкновенная.] (* <- lang_ru;; *);;
+
+fox_breeding_period <- concept_hunting_breeding_period;
+=> nrel_main_idtf: [февраль — начало апреля] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 32 PDF: период гона лисицы.] (* <- lang_ru;; *);;
+
+hare <- concept_hunting_lagomorph;
+=> nrel_hunting_animal_group: concept_hunting_lagomorph;
+=> nrel_hunting_animal_profile: hare_biology_profile;;
+
+hare_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [зайцеобразное млекопитающее; в источнике отдельно описаны заяц-беляк и заяц-русак] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 28–29 PDF.] (* <- lang_ru;; *);;
+
+mallard <- concept_bird; <- concept_waterfowl; <- concept_hunting_animal;
+=> nrel_main_idtf: [кряква] (* <- lang_ru;; *);
+=> nrel_habitat: water_body;
+=> nrel_hunting_method: bird_hunting;
+=> nrel_hunting_animal_group: concept_waterfowl;
+=> nrel_hunting_animal_profile: mallard_biology_profile;
+=> nrel_hunting_breeding_period: mallard_breeding_period;;
+
+mallard_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [водоплавающая птица семейства утиных, встречающаяся у рек, озёр и других водно-болотных угодий] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 52 PDF.] (* <- lang_ru;; *);;
+
+mallard_breeding_period <- concept_hunting_breeding_period;
+=> nrel_main_idtf: [пары образуются с осени; гнездо устраивается на земле] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 52 PDF.] (* <- lang_ru;; *);;
+
+capercaillie <- concept_bird; <- concept_forest_game_bird; <- concept_hunting_animal;
+=> nrel_main_idtf: [глухарь] (* <- lang_ru;; *);
+=> nrel_habitat: forest;
+=> nrel_hunting_method: bird_hunting;
+=> nrel_hunting_animal_group: concept_forest_game_bird;
+=> nrel_hunting_animal_profile: capercaillie_biology_profile;
+=> nrel_hunting_breeding_period: capercaillie_breeding_period;;
+
+capercaillie_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [оседлая лесная птица, обитающая в хвойных и смешанных лесах] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 38 PDF.] (* <- lang_ru;; *);;
+
+capercaillie_breeding_period <- concept_hunting_breeding_period;
+=> nrel_main_idtf: [весна, токование в марте] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 38 PDF.] (* <- lang_ru;; *);;
+
+black_grouse <- concept_bird; <- concept_forest_game_bird; <- concept_hunting_animal;
+=> nrel_main_idtf: [тетерев] (* <- lang_ru;; *);
+=> nrel_habitat: forest;
+=> nrel_hunting_method: bird_hunting;
+=> nrel_hunting_animal_group: concept_forest_game_bird;
+=> nrel_hunting_animal_profile: black_grouse_biology_profile;
+=> nrel_hunting_breeding_period: black_grouse_breeding_period;;
+
+black_grouse_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [лесная птица, предпочитающая участки с полянами и берёзами] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 39 PDF.] (* <- lang_ru;; *);;
+
+black_grouse_breeding_period <- concept_hunting_breeding_period;
+=> nrel_main_idtf: [чаще апрель — май; начало зависит от погоды и местности] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 39 PDF: токование тетерева.] (* <- lang_ru;; *);;
+
+hazel_grouse <- concept_bird; <- concept_forest_game_bird; <- concept_hunting_animal;
+=> nrel_main_idtf: [рябчик] (* <- lang_ru;; *);
+=> nrel_habitat: forest;
+=> nrel_hunting_method: bird_hunting;
+=> nrel_hunting_animal_group: concept_forest_game_bird;
+=> nrel_hunting_animal_profile: hazel_grouse_biology_profile;
+=> nrel_hunting_breeding_period: hazel_grouse_breeding_period;;
+
+hazel_grouse_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [лесная птица, обитающая в лиственных и смешанных лесах с ягодниками] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 40 PDF.] (* <- lang_ru;; *);;
+
+hazel_grouse_breeding_period <- concept_hunting_breeding_period;
+=> nrel_main_idtf: [март — апрель] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 41 PDF: токование и спаривание рябчика.] (* <- lang_ru;; *);;
+
+woodcock <- concept_bird; <- concept_forest_game_bird; <- concept_hunting_animal;
+=> nrel_main_idtf: [вальдшнеп] (* <- lang_ru;; *);
+=> nrel_habitat: forest;
+=> nrel_hunting_method: bird_hunting;
+=> nrel_hunting_animal_group: concept_forest_game_bird;
+=> nrel_hunting_animal_profile: woodcock_biology_profile;;
+
+woodcock_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [лесной кулик с длинным чувствительным клювом, питающийся в том числе почвенными беспозвоночными] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 42 PDF.] (* <- lang_ru;; *);;
+
+duck => nrel_hunting_animal_group: concept_waterfowl;
+=> nrel_hunting_animal_profile: duck_biology_profile;;
+
+duck_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [представитель водоплавающих птиц; в учебных материалах отдельно рассматриваются различные виды уток] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 7 и 52–53 PDF.] (* <- lang_ru;; *);;
+
+goose => nrel_hunting_animal_group: concept_waterfowl;
+=> nrel_hunting_animal_profile: goose_biology_profile;;
+
+goose_biology_profile <- concept_hunting_biology_description;
+=> nrel_main_idtf: [представитель водоплавающих птиц; в учебных материалах перечислены несколько видов гусей] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 7 PDF.] (* <- lang_ru;; *);;
+
+stalking_hunt => nrel_hunting_method_description: stalking_hunt_description;;
+
+stalking_hunt_description <- concept_hunting_method_description;
+=> nrel_main_idtf: [способ охоты с поиском животного и последующим приближением к нему] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 110 PDF.] (* <- lang_ru;; *);;
+
+hunting_from_ambush => nrel_hunting_method_description: hunting_from_ambush_description;;
+
+hunting_from_ambush_description <- concept_hunting_method_description;
+=> nrel_main_idtf: [способ охоты с ожиданием животного из укрытия] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 110 PDF.] (* <- lang_ru;; *);;
+
+driven_hunt => nrel_hunting_method_description: driven_hunt_description;;
+
+driven_hunt_description <- concept_hunting_method_description;
+=> nrel_main_idtf: [коллективный способ охоты с участием загонщиков и охотников] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 110 PDF.] (* <- lang_ru;; *);;
+
+tracking_hunt => nrel_hunting_method_description: tracking_hunt_description;;
+
+tracking_hunt_description <- concept_hunting_method_description;
+=> nrel_main_idtf: [учебное понятие охоты, связанной с поиском животного по его следам] (* <- lang_ru;; *);
+=> nrel_note: [Описание учебной модели; конкретные условия регулируются действующими правилами.] (* <- lang_ru;; *);;
+
+bird_hunting => nrel_hunting_method_description: bird_hunting_description;;
+
+bird_hunting_description <- concept_hunting_method_description;
+=> nrel_main_idtf: [общее понятие охоты на птиц, включённых в предметную область] (* <- lang_ru;; *);
+=> nrel_note: [Описание учебной модели; виды и условия зависят от действующих правил.] (* <- lang_ru;; *);;
+
+hunting_with_dog => nrel_hunting_method_description: hunting_with_dog_description;;
+
+hunting_with_dog_description <- concept_hunting_method_description;
+=> nrel_main_idtf: [охота, в которой участвует подготовленная охотничья собака] (* <- lang_ru;; *);
+=> nrel_note: [Обобщённое описание учебной модели.] (* <- lang_ru;; *);;
+
+binoculars <- concept_hunting_object; => nrel_hunting_object_description: binoculars_description;;
+
+binoculars_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [оптический прибор для наблюдения на расстоянии] (* <- lang_ru;; *);;
+
+camouflage_clothing <- concept_hunting_object; => nrel_hunting_object_description: camouflage_description;;
+
+camouflage_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [одежда, которая помогает уменьшить заметность наблюдателя] (* <- lang_ru;; *);;
+
+hunting_stand <- concept_hunting_object; => nrel_hunting_object_description: hunting_stand_description;;
+
+hunting_stand_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [оборудованное место ожидания и наблюдения] (* <- lang_ru;; *);;
+
+compass <- concept_hunting_object; => nrel_hunting_object_description: compass_description;;
+
+compass_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [навигационный прибор для определения направления] (* <- lang_ru;; *);;
+
+shotgun <- concept_hunting_object; => nrel_hunting_object_description: shotgun_description;;
+
+shotgun_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [категория гладкоствольного охотничьего оружия] (* <- lang_ru;; *);;
+
+rifle <- concept_hunting_object; => nrel_hunting_object_description: rifle_description;;
+
+rifle_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [категория нарезного охотничьего оружия] (* <- lang_ru;; *);;
+
+hunting_knife <- concept_hunting_object; => nrel_hunting_object_description: hunting_knife_description;;
+
+hunting_knife_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [режущий инструмент охотничьего назначения] (* <- lang_ru;; *);;
+
+hunting_dog <- concept_hunting_object; => nrel_hunting_object_description: hunting_dog_description;;
+
+hunting_dog_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [подготовленная собака, которая помогает искать и обнаруживать животное] (* <- lang_ru;; *);;
+
+hound <- concept_hunting_object; => nrel_hunting_object_description: hound_description;;
+
+hound_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [охотничья собака, используемая при поиске и преследовании зверя] (* <- lang_ru;; *);;
+
+firearm_safety <- concept_hunting_object; => nrel_hunting_object_description: firearm_safety_description;;
+
+firearm_safety_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [правила безопасного обращения с оружием] (* <- lang_ru;; *);;
+
+navigation_safety <- concept_hunting_object; => nrel_hunting_object_description: navigation_safety_description;;
+
+navigation_safety_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [правила сохранения маршрута, связи и ориентации на местности] (* <- lang_ru;; *);;
+
+radio_station <- concept_hunting_object;
+=> nrel_hunting_object_description: radio_station_description;;
+radio_station_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [средство связи между участниками группы] (* <- lang_ru;; *);;
+
+group_safety <- concept_hunting_object;
+=> nrel_hunting_object_description: group_safety_description;;
+group_safety_description <- concept_hunting_object_description;
+=> nrel_main_idtf: [правила согласованных действий и связи между участниками группы] (* <- lang_ru;; *);;
+
+concept_hunting_ungulate => nrel_hunting_group_description: hunting_ungulate_group_description;;
+hunting_ungulate_group_description <- concept_hunting_group_description;
+=> nrel_main_idtf: [группа охотничьих животных, в которую в учебной модели входят лось, косуля, кабан и олень] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 7 PDF.] (* <- lang_ru;; *);;
+
+concept_forest_game_bird => nrel_hunting_group_description: forest_game_group_description;;
+forest_game_group_description <- concept_hunting_group_description;
+=> nrel_main_idtf: [группа боровой дичи, в которую в учебной модели входят глухарь, тетерев, рябчик и вальдшнеп] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 7 PDF.] (* <- lang_ru;; *);;
+
+concept_waterfowl => nrel_hunting_group_description: waterfowl_group_description;;
+waterfowl_group_description <- concept_hunting_group_description;
+=> nrel_main_idtf: [группа птиц, связанных с водными и водно-болотными угодьями] (* <- lang_ru;; *);
+=> nrel_note: [Белгосохота, с. 7, 52–53 PDF.] (* <- lang_ru;; *);;
+
+concept_bird => nrel_hunting_group_description: bird_group_description;;
+bird_group_description <- concept_hunting_group_description;
+=> nrel_main_idtf: [класс позвоночных животных, отличительный признак которых — перьевой покров] (* <- lang_ru;; *);;
+
+concept_mammal => nrel_hunting_group_description: mammal_group_description;;
+mammal_group_description <- concept_hunting_group_description;
+=> nrel_main_idtf: [класс позвоночных животных, вскармливающих детёнышей молоком] (* <- lang_ru;; *);;

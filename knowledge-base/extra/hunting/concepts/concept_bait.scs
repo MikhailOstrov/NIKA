@@ -1,0 +1,7 @@
+concept_bait
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [приманка и манок] (* <- lang_ru;; *);;
+
+concept_bait
+=> nrel_note: [Предмет или средство, применяемое для привлечения внимания животного.] (* <- lang_ru;; *);;

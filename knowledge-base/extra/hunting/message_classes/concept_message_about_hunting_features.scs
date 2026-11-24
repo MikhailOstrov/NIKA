@@ -1,0 +1,6 @@
+concept_message_about_hunting_features
+<- sc_node_class;
+<- concept_atomic_message;
+<- concept_intent_possible_class;
+=> nrel_main_idtf: [сообщение об особенностях животного] (* <- lang_ru;; *);
+=> nrel_wit_ai_idtf: [about_hunting_features];;

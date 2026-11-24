@@ -1,0 +1,9 @@
+concept_hunting_animal
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf:
+    [охотничье животное]
+    (* <- lang_ru;; *);;
+
+concept_hunting_animal
+=> nrel_note: [Животное, рассматриваемое как объект наблюдения или охотничьей деятельности.] (* <- lang_ru;; *);;

@@ -1,0 +1,6 @@
+concept_message_about_hunting_inference
+<- sc_node_class;
+<- concept_atomic_message;
+<- concept_intent_possible_class;
+=> nrel_main_idtf: [запрос на вывод знания из графа охоты] (* <- lang_ru;; *);
+=> nrel_wit_ai_idtf: [about_hunting_inference];;

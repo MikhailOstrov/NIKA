@@ -1,0 +1,7 @@
+concept_hunting_ethics
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничья этика] (* <- lang_ru;; *);;
+
+concept_hunting_ethics
+=> nrel_note: [Принципы ответственного отношения к природе, животным и другим людям.] (* <- lang_ru;; *);;

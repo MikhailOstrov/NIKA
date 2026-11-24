@@ -1,0 +1,10 @@
+concept_message_about_hunting_animal
+<- sc_node_class;
+<- concept_atomic_message;
+<- concept_intent_possible_class;
+=> nrel_main_idtf:
+    [сообщение о животном]
+    (* <- lang_ru;; *);
+    [message about hunting animal]
+    (* <- lang_en;; *);
+=> nrel_wit_ai_idtf: [about_hunting_animal];;

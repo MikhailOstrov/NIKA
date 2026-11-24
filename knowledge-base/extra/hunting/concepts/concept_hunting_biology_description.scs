@@ -1,0 +1,3 @@
+concept_hunting_biology_description <- sc_node_class;
+=> nrel_main_idtf: [биологическая характеристика животного] (* <- lang_ru;; *);
+=> nrel_note: [Краткое биологическое описание вида для учебной базы.] (* <- lang_ru;; *);;

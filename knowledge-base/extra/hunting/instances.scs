@@ -1,0 +1,205 @@
+elk <- concept_mammal;
+<- concept_hunting_animal;
+<- concept_large_game_animal;
+=> nrel_main_idtf: [лось] (* <- lang_ru;; *);
+=> nrel_habitat: forest;
+=> nrel_hunting_method: stalking_hunt;
+=> nrel_activity_time: autumn_season;;
+
+wild_boar <- concept_mammal;
+<- concept_hunting_animal;
+<- concept_large_game_animal;
+=> nrel_main_idtf: [кабан] (* <- lang_ru;; *);
+=> nrel_habitat: forest;
+=> nrel_hunting_method: driven_hunt;
+=> nrel_hunting_method: hunting_with_dog;;
+
+roe_deer <- concept_mammal;
+<- concept_hunting_animal;
+<- concept_large_game_animal;
+=> nrel_main_idtf: [косуля] (* <- lang_ru;; *);
+=> nrel_habitat: forest;
+=> nrel_hunting_method: stalking_hunt;;
+
+red_deer <- concept_mammal;
+<- concept_hunting_animal;
+<- concept_large_game_animal;
+=> nrel_main_idtf: [олень] (* <- lang_ru;; *);
+=> nrel_habitat: forest;
+=> nrel_hunting_method: stalking_hunt;;
+
+hare <- concept_mammal;
+<- concept_hunting_animal;
+<- concept_small_game_animal;
+=> nrel_main_idtf: [заяц] (* <- lang_ru;; *);
+=> nrel_habitat: field;
+=> nrel_hunting_method: tracking_hunt;
+=> nrel_tracking_sign: hare_tracks;;
+
+fox <- concept_mammal;
+<- concept_hunting_animal;
+<- concept_small_game_animal;
+=> nrel_main_idtf: [лиса] (* <- lang_ru;; *);
+=> nrel_habitat: forest;
+=> nrel_hunting_method: hunting_from_ambush;;
+
+duck <- concept_bird;
+<- concept_hunting_animal;
+<- concept_waterfowl;
+=> nrel_main_idtf: [утка] (* <- lang_ru;; *);
+=> nrel_habitat: water_body;
+=> nrel_hunting_method: bird_hunting;
+=> nrel_tracking_sign: duck_call_sign;;
+
+goose <- concept_bird;
+<- concept_hunting_animal;
+<- concept_waterfowl;
+=> nrel_main_idtf: [гусь] (* <- lang_ru;; *);
+=> nrel_habitat: water_body;
+=> nrel_hunting_method: bird_hunting;;
+
+forest <- concept_habitat;
+<- concept_hunting_area;
+=> nrel_main_idtf: [лес] (* <- lang_ru;; *);;
+
+field <- concept_habitat;
+<- concept_hunting_area;
+=> nrel_main_idtf: [поле] (* <- lang_ru;; *);;
+
+water_body <- concept_habitat;
+<- concept_hunting_area;
+=> nrel_main_idtf: [водоём] (* <- lang_ru;; *);;
+
+individual_hunt <- concept_hunting_type;
+=> nrel_main_idtf: [индивидуальная охота] (* <- lang_ru;; *);;
+
+collective_hunt <- concept_hunting_type;
+=> nrel_main_idtf: [коллективная охота] (* <- lang_ru;; *);;
+
+stalking_hunt <- concept_hunting_method;
+=> nrel_main_idtf: [охота с подхода] (* <- lang_ru;; *);
+=> nrel_hunting_type: individual_hunt;
+=> nrel_equipment: camouflage_clothing;
+=> nrel_equipment: binoculars;
+=> nrel_safety_rule: firearm_safety;
+=> nrel_license_required: sample_hunting_permit;;
+
+hunting_from_ambush <- concept_hunting_method;
+=> nrel_main_idtf: [охота из засидки] (* <- lang_ru;; *);
+=> nrel_hunting_type: individual_hunt;
+=> nrel_equipment: hunting_stand;
+=> nrel_bait: bait;
+=> nrel_safety_rule: firearm_safety;
+=> nrel_license_required: sample_hunting_permit;;
+
+driven_hunt <- concept_hunting_method;
+=> nrel_main_idtf: [загонная охота] (* <- lang_ru;; *);
+=> nrel_hunting_type: collective_hunt;
+=> nrel_equipment: radio_station;
+=> nrel_safety_rule: group_safety;
+=> nrel_license_required: sample_hunting_permit;
+=> nrel_hunting_team: hunting_team;;
+
+tracking_hunt <- concept_hunting_method;
+=> nrel_main_idtf: [охота по следу] (* <- lang_ru;; *);
+=> nrel_hunting_type: individual_hunt;
+=> nrel_equipment: binoculars;
+=> nrel_safety_rule: navigation_safety;
+=> nrel_license_required: sample_hunting_permit;;
+
+bird_hunting <- concept_hunting_method;
+=> nrel_main_idtf: [охота на птицу] (* <- lang_ru;; *);
+=> nrel_hunting_type: individual_hunt;
+=> nrel_weapon: shotgun;
+=> nrel_bait: bird_decoy;
+=> nrel_bait: duck_decoy;
+=> nrel_license_required: sample_hunting_permit;;
+
+hunting_with_dog <- concept_hunting_method;
+=> nrel_main_idtf: [охота с собакой] (* <- lang_ru;; *);
+=> nrel_dog: hunting_dog;
+=> nrel_safety_rule: group_safety;
+=> nrel_license_required: sample_hunting_permit;;
+
+shotgun <- concept_weapon;
+=> nrel_main_idtf: [гладкоствольное ружьё] (* <- lang_ru;; *);
+=> nrel_used_for: duck;
+=> nrel_used_for: goose;
+=> nrel_ammunition: shotgun_shell;;
+
+rifle <- concept_weapon;
+=> nrel_main_idtf: [охотничья винтовка] (* <- lang_ru;; *);
+=> nrel_used_for: elk;
+=> nrel_used_for: roe_deer;
+=> nrel_ammunition: rifle_cartridge;;
+
+hunting_knife <- concept_weapon;
+=> nrel_main_idtf: [охотничий нож] (* <- lang_ru;; *);;
+
+binoculars <- concept_equipment;
+=> nrel_main_idtf: [бинокль] (* <- lang_ru;; *);;
+
+camouflage_clothing <- concept_equipment;
+=> nrel_main_idtf: [маскировочная одежда] (* <- lang_ru;; *);;
+
+hunting_stand <- concept_equipment;
+=> nrel_main_idtf: [охотничья засидка] (* <- lang_ru;; *);;
+
+radio_station <- concept_equipment;
+=> nrel_main_idtf: [радиостанция] (* <- lang_ru;; *);;
+
+compass <- concept_equipment;
+=> nrel_main_idtf: [компас] (* <- lang_ru;; *);;
+
+duck_decoy <- concept_bait;
+=> nrel_main_idtf: [манок на утку] (* <- lang_ru;; *);;
+
+bird_decoy <- concept_bait;
+=> nrel_main_idtf: [чучело птицы] (* <- lang_ru;; *);;
+
+bait <- concept_bait;
+=> nrel_main_idtf: [приманка] (* <- lang_ru;; *);;
+
+hunting_dog <- concept_hunting_dog;
+=> nrel_main_idtf: [охотничья собака] (* <- lang_ru;; *);;
+
+hound <- concept_hunting_dog;
+=> nrel_main_idtf: [гончая] (* <- lang_ru;; *);;
+
+autumn_season <- concept_hunting_season;
+=> nrel_main_idtf: [осенний сезон] (* <- lang_ru;; *);;
+
+firearm_safety <- concept_safety;
+=> nrel_main_idtf: [безопасность при обращении с оружием] (* <- lang_ru;; *);;
+
+group_safety <- concept_safety;
+=> nrel_main_idtf: [безопасность в группе] (* <- lang_ru;; *);;
+
+navigation_safety <- concept_safety;
+=> nrel_main_idtf: [безопасность навигации] (* <- lang_ru;; *);;
+
+autumn_hunt_case <- concept_hunting;
+=> nrel_main_idtf: [учебный пример охотничьего выхода] (* <- lang_ru;; *);
+-> rrel_entity_hunting: elk;;
+
+hare_tracks <- concept_tracking_sign;
+=> nrel_main_idtf: [следы зайца] (* <- lang_ru;; *);;
+
+duck_call_sign <- concept_tracking_sign;
+=> nrel_main_idtf: [голосовой признак водоплавающей птицы] (* <- lang_ru;; *);;
+
+hunting_team <- concept_hunting_team;
+=> nrel_main_idtf: [условная группа участников охоты] (* <- lang_ru;; *);;
+
+sample_hunting_permit <- concept_hunting_license;
+=> nrel_main_idtf: [учебный пример разрешительного документа] (* <- lang_ru;; *);;
+
+shotgun_shell <- concept_ammunition;
+=> nrel_main_idtf: [категория патрона для гладкоствольного оружия] (* <- lang_ru;; *);;
+
+rifle_cartridge <- concept_ammunition;
+=> nrel_main_idtf: [категория патрона для нарезного оружия] (* <- lang_ru;; *);;
+
+ethical_hunting <- concept_hunting_ethics;
+=> nrel_main_idtf: [ответственное отношение к природе] (* <- lang_ru;; *);;
+

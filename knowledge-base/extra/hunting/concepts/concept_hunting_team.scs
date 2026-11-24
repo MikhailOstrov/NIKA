@@ -1,0 +1,7 @@
+concept_hunting_team
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [группа участников охоты] (* <- lang_ru;; *);;
+
+concept_hunting_team
+=> nrel_note: [Условная группа участников, связанная с коллективным методом.] (* <- lang_ru;; *);;

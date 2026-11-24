@@ -1,0 +1,3 @@
+concept_hunting_group_description <- sc_node_class;
+=> nrel_main_idtf: [описание группы охотничьих животных] (* <- lang_ru;; *);
+=> nrel_note: [Краткое учебное описание класса или группы животных.] (* <- lang_ru;; *);;

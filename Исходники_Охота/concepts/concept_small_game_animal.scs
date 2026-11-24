@@ -1,0 +1,7 @@
+concept_small_game_animal
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting_animal;
+=> nrel_main_idtf: [мелкое охотничье животное] (* <- lang_ru;; *);;
+
+concept_small_game_animal
+=> nrel_note: [Условная учебная категория небольших животных предметной области.] (* <- lang_ru;; *);;

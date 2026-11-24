@@ -1,0 +1,3 @@
+concept_hunting_breeding_period <- sc_node_class;
+=> nrel_main_idtf: [период размножения животного] (* <- lang_ru;; *);
+=> nrel_note: [Обобщённое время гона, токования или образования пар по учебному источнику.] (* <- lang_ru;; *);;

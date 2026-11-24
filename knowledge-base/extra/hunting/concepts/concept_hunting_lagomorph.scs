@@ -1,0 +1,4 @@
+concept_hunting_lagomorph <- sc_node_class;
+<= nrel_inclusion: concept_mammal;
+=> nrel_main_idtf: [зайцеобразное] (* <- lang_ru;; *);
+=> nrel_note: [Учебная группа охотничьих животных из отряда зайцеобразных.] (* <- lang_ru;; *);;

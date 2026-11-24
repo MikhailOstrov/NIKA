@@ -1,0 +1,25 @@
+concept_hunting_research_topic <- sc_node_class;
+=> nrel_main_idtf: [аспект поиска сведений] (* <- lang_ru;; *);;
+
+hunting_research_topic_habitat <- concept_hunting_research_topic;
+=> nrel_main_idtf: [место обитания] (* <- lang_ru;; *);;
+hunting_research_topic_distribution <- concept_hunting_research_topic;
+=> nrel_main_idtf: [ареал распространения] (* <- lang_ru;; *);;
+hunting_research_topic_biology <- concept_hunting_research_topic;
+=> nrel_main_idtf: [биологические особенности] (* <- lang_ru;; *);;
+hunting_research_topic_breeding <- concept_hunting_research_topic;
+=> nrel_main_idtf: [размножение и гон] (* <- lang_ru;; *);;
+hunting_research_topic_behavior <- concept_hunting_research_topic;
+=> nrel_main_idtf: [поведение] (* <- lang_ru;; *);;
+hunting_research_topic_diet <- concept_hunting_research_topic;
+=> nrel_main_idtf: [питание] (* <- lang_ru;; *);;
+hunting_research_topic_taxonomy <- concept_hunting_research_topic;
+=> nrel_main_idtf: [систематическое положение] (* <- lang_ru;; *);;
+hunting_research_topic_population <- concept_hunting_research_topic;
+=> nrel_main_idtf: [численность и охрана] (* <- lang_ru;; *);;
+hunting_research_topic_hunting_method <- concept_hunting_research_topic;
+=> nrel_main_idtf: [способы охоты] (* <- lang_ru;; *);;
+hunting_research_topic_equipment <- concept_hunting_research_topic;
+=> nrel_main_idtf: [охотничье снаряжение] (* <- lang_ru;; *);;
+hunting_research_topic_general <- concept_hunting_research_topic;
+=> nrel_main_idtf: [общая информация] (* <- lang_ru;; *);;

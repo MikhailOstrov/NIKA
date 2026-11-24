@@ -1,0 +1,9 @@
+concept_hunting_dog
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничья собака] (* <- lang_ru;; *);;
+
+concept_hunting_dog
+=> nrel_note: [Собака, подготовленная для поиска, преследования или подачи объекта охоты.] (* <- lang_ru;; *);;
+
+concept_hunting_dog <= nrel_inclusion: concept_hunting_object;;

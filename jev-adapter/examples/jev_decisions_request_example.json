@@ -1,0 +1,33 @@
+{
+  "model": "typesafe/jev-1.14",
+  "state": {
+    "message": "Выведи общую среду обитания боровых птиц"
+  },
+  "questions": {
+    "intent": {
+      "type": "choice",
+      "instructions": "Определи тип запроса.",
+      "criteria": {
+        "about_hunting_inference": "Вывод знания из графа NIKA.",
+        "about_hunting_research": "Внешний поиск с добавлением заметки."
+      }
+    },
+    "entity": {
+      "type": "choice",
+      "instructions": "Определи явно упомянутый объект.",
+      "criteria": {
+        "group_forest_birds": "Боровые охотничьи птицы.",
+        "unknown": "Объект не определён."
+      }
+    },
+    "topic": {
+      "type": "choice",
+      "instructions": "Определи аспект запроса.",
+      "criteria": {
+        "habitat": "Среда или место обитания.",
+        "general": "Общая информация.",
+        "unknown": "Аспект не определён."
+      }
+    }
+  }
+}

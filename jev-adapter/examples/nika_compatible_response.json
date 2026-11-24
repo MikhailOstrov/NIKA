@@ -1,0 +1,28 @@
+{
+  "text": "Выведи общую среду обитания боровых птиц",
+  "intents": [
+    {
+      "name": "about_hunting_inference",
+      "confidence": 0.97
+    }
+  ],
+  "entities": {
+    "rrel_entity:rrel_entity": [
+      {
+        "name": "rrel_entity",
+        "role": "rrel_entity",
+        "value": "боровая охотничья птица",
+        "type": "value"
+      }
+    ],
+    "rrel_topic:rrel_topic": [
+      {
+        "name": "rrel_topic",
+        "role": "rrel_topic",
+        "value": "место обитания",
+        "type": "value"
+      }
+    ]
+  },
+  "traits": {}
+}

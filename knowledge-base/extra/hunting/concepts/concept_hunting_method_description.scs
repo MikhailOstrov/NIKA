@@ -1,0 +1,3 @@
+concept_hunting_method_description <- sc_node_class;
+=> nrel_main_idtf: [описание способа охоты] (* <- lang_ru;; *);
+=> nrel_note: [Краткое определение способа охоты из учебного источника.] (* <- lang_ru;; *);;

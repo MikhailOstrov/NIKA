@@ -1,0 +1,9 @@
+concept_equipment
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничье снаряжение] (* <- lang_ru;; *);;
+
+concept_equipment
+=> nrel_note: [Снаряжение, помогающее наблюдать, перемещаться и поддерживать безопасность.] (* <- lang_ru;; *);;
+
+concept_equipment <= nrel_inclusion: concept_hunting_object;;

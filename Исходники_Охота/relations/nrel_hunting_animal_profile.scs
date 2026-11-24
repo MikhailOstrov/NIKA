@@ -1,0 +1,8 @@
+nrel_hunting_animal_profile <- sc_node_non_role_relation;
+<- relation; <- binary_relation; <- oriented_relation;
+<- antireflexive_relation; <- asymmetric_relation; <- antitransitive_relation;
+=> nrel_main_idtf: [имеет биологическую характеристику] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_hunting_animal;
+=> nrel_second_domain: concept_hunting_biology_description;
+=> nrel_definitional_domain: { concept_hunting_animal; concept_hunting_biology_description };
+=> nrel_note: [Связывает животное с краткой характеристикой вида из учебного источника.] (* <- lang_ru;; *);;

@@ -1,0 +1,7 @@
+concept_hunting_method
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничий метод] (* <- lang_ru;; *);;
+
+concept_hunting_method
+=> nrel_note: [Способ поиска, наблюдения и добычи объекта охоты.] (* <- lang_ru;; *);;

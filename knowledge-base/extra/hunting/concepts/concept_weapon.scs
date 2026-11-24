@@ -1,0 +1,9 @@
+concept_weapon
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничье оружие] (* <- lang_ru;; *);;
+
+concept_weapon
+=> nrel_note: [Охотничье оружие, используемое только с соблюдением требований безопасности и закона.] (* <- lang_ru;; *);;
+
+concept_weapon <= nrel_inclusion: concept_hunting_object;;

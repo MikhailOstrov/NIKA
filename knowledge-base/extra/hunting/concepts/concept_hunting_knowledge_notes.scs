@@ -1,0 +1,5 @@
+concept_hunting_research_note <- sc_node_class;
+=> nrel_main_idtf: [заметка с внешним источником] (* <- lang_ru;; *);;
+
+concept_hunting_derived_note <- sc_node_class;
+=> nrel_main_idtf: [выведенное из графа знание] (* <- lang_ru;; *);;

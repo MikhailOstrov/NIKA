@@ -1,0 +1,19 @@
+{
+  "answers": {
+    "intent": {
+      "type": "choice",
+      "choice": "about_hunting_inference",
+      "confidence": 0.97
+    },
+    "entity": {
+      "type": "choice",
+      "choice": "group_forest_birds",
+      "confidence": 0.96
+    },
+    "topic": {
+      "type": "choice",
+      "choice": "habitat",
+      "confidence": 0.95
+    }
+  }
+}

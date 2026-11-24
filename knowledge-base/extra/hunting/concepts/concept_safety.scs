@@ -1,0 +1,9 @@
+concept_safety
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [безопасность на охоте] (* <- lang_ru;; *);;
+
+concept_safety
+=> nrel_note: [Правило, снижающее риск травм, потери ориентации и иных опасных ситуаций.] (* <- lang_ru;; *);;
+
+concept_safety <= nrel_inclusion: concept_hunting_object;;

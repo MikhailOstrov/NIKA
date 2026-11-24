@@ -1,0 +1,4 @@
+concept_forest_game_bird <- sc_node_class;
+<= nrel_inclusion: concept_bird;
+=> nrel_main_idtf: [боровая охотничья птица] (* <- lang_ru;; *);
+=> nrel_note: [Учебная группа боровой дичи, включая глухаря, тетерева, рябчика и вальдшнепа; источник: Белгосохота, с. 7.] (* <- lang_ru;; *);;

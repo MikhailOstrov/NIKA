@@ -1,0 +1,8 @@
+action_hunting_knowledge
+<- sc_node_class;
+=> nrel_main_idtf:
+	[действие. поиск сведений и вывод знания об охоте] (* <- lang_ru;; *);
+	[action. research hunting knowledge] (* <- lang_en;; *);
+<- actions_class;
+<- atomic_action_class;
+<= nrel_inclusion: information_action;;

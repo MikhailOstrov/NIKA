@@ -1,0 +1,7 @@
+concept_mammal
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting_animal;
+=> nrel_main_idtf: [млекопитающее] (* <- lang_ru;; *);;
+
+concept_mammal
+=> nrel_note: [Охотничье животное, относящееся к классу млекопитающих.] (* <- lang_ru;; *);;

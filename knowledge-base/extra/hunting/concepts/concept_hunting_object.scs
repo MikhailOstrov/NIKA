@@ -1,0 +1,4 @@
+concept_hunting_object <- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [объект или правило предметной области охоты] (* <- lang_ru;; *);
+=> nrel_note: [Учебная группа снаряжения, оружия, охотничьих собак и правил безопасности.] (* <- lang_ru;; *);;

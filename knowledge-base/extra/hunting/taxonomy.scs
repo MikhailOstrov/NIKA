@@ -1,0 +1,5 @@
+/* Ограниченный перечень представителей семейства, присутствующих в учебном графе.
+   Таксономические отнесения сверены с ASM Mammal Diversity Database. */
+elk => nrel_taxonomic_family: family_cervidae;;
+roe_deer => nrel_taxonomic_family: family_cervidae;;
+red_deer => nrel_taxonomic_family: family_cervidae;;

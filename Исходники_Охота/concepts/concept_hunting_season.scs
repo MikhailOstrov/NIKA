@@ -1,0 +1,7 @@
+concept_hunting_season
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничий сезон] (* <- lang_ru;; *);;
+
+concept_hunting_season
+=> nrel_note: [Период, в который для конкретного вида деятельности действуют заданные условия.] (* <- lang_ru;; *);;

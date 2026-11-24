@@ -1,0 +1,12 @@
+# Optional override for docker-compose.lab.yml: replace the local mock with Jev.
+services:
+  wit-mock:
+    image: nika-jev-adapter:local
+    build:
+      context: ./jev-adapter
+      dockerfile: Dockerfile
+    environment:
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:?Set OPENROUTER_API_KEY in the project .env}
+      JEV_MODEL: ${JEV_MODEL:-typesafe/jev-1.14}
+      JEV_TIMEOUT_SECONDS: ${JEV_TIMEOUT_SECONDS:-20}
+    restart: unless-stopped

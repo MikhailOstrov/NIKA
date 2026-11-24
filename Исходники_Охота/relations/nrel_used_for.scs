@@ -1,0 +1,13 @@
+nrel_used_for
+<- sc_node_non_role_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf: [предназначено для охоты на] (* <- lang_ru;; *);
+=> nrel_first_domain: concept_weapon;
+=> nrel_second_domain: concept_hunting_animal;
+=> nrel_definitional_domain: { concept_weapon; concept_hunting_animal };
+=> nrel_note: [Связывает категорию оружия с животным в учебном примере.] (* <- lang_ru;; *);;

@@ -1,0 +1,7 @@
+concept_bird
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting_animal;
+=> nrel_main_idtf: [птица] (* <- lang_ru;; *);;
+
+concept_bird
+=> nrel_note: [Охотничье животное, относящееся к птицам.] (* <- lang_ru;; *);;

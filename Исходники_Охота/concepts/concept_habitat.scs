@@ -1,0 +1,7 @@
+concept_habitat
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [место обитания] (* <- lang_ru;; *);;
+
+concept_habitat
+=> nrel_note: [Тип природного места, в котором обычно наблюдается животное.] (* <- lang_ru;; *);;

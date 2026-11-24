@@ -1,0 +1,7 @@
+concept_hunting_area
+<- sc_node_class;
+<= nrel_inclusion: concept_habitat;
+=> nrel_main_idtf: [охотничья местность] (* <- lang_ru;; *);;
+
+concept_hunting_area
+=> nrel_note: [Тип местности, используемый для описания местообитания.] (* <- lang_ru;; *);;

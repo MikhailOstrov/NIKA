@@ -1,0 +1,7 @@
+concept_large_game_animal
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting_animal;
+=> nrel_main_idtf: [крупное охотничье животное] (* <- lang_ru;; *);;
+
+concept_large_game_animal
+=> nrel_note: [Условная учебная категория крупных животных предметной области.] (* <- lang_ru;; *);;

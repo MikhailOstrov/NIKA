@@ -1,0 +1,8 @@
+concept_taxonomic_family <- sc_node_class;
+=> nrel_main_idtf: [таксономическое семейство] (* <- lang_ru;; *);;
+
+family_cervidae <- concept_taxonomic_family;
+=> nrel_main_idtf: [семейство оленьих] (* <- lang_ru;; *);
+=> nrel_main_idtf: [оленьи] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Cervidae] (* <- lang_en;; *);
+=> nrel_note: [В этом учебном графе связь показана для лося, косули и благородного оленя.] (* <- lang_ru;; *);;

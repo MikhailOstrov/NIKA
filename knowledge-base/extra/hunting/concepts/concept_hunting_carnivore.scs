@@ -1,0 +1,4 @@
+concept_hunting_carnivore <- sc_node_class;
+<= nrel_inclusion: concept_mammal;
+=> nrel_main_idtf: [хищное млекопитающее] (* <- lang_ru;; *);
+=> nrel_note: [Учебная группа охотничьих млекопитающих из отряда хищных.] (* <- lang_ru;; *);;

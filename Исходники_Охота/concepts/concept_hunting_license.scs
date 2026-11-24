@@ -1,0 +1,7 @@
+concept_hunting_license
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [разрешительный документ для охоты] (* <- lang_ru;; *);;
+
+concept_hunting_license
+=> nrel_note: [Учебная категория разрешительных документов; конкретные региональные нормы не моделируются.] (* <- lang_ru;; *);;

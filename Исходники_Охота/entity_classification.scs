@@ -1,0 +1,81 @@
+concept_entity_possible_class
+-> concept_hunting_animal;
+-> concept_hunting_method;
+-> concept_equipment;
+-> concept_weapon;
+-> concept_habitat;
+-> concept_hunting_dog;
+-> concept_safety;
+-> concept_hunting_group_entity;;
+
+concept_hunting_group_entity <- sc_node_class;
+=> nrel_wit_ai_idtf: [rrel_entity];
+=> nrel_entity_possible_role: { rrel_entity };
+-> concept_hunting_ungulate;
+-> concept_forest_game_bird;
+-> concept_waterfowl;
+-> concept_bird;
+-> concept_mammal;;
+
+concept_hunting_animal
+=> nrel_wit_ai_idtf: [rrel_entity];
+=> nrel_entity_possible_role: { rrel_entity };
+-> elk;
+-> wild_boar;
+-> roe_deer;
+-> red_deer;
+-> hare;
+-> fox;
+-> duck;
+-> goose;
+-> mallard;
+-> capercaillie;
+-> black_grouse;
+-> hazel_grouse;
+-> woodcock;;
+
+concept_hunting_method
+=> nrel_wit_ai_idtf: [rrel_entity];
+=> nrel_entity_possible_role: { rrel_entity };
+-> stalking_hunt;
+-> hunting_from_ambush;
+-> driven_hunt;
+-> tracking_hunt;
+-> bird_hunting;
+-> hunting_with_dog;;
+
+concept_equipment
+=> nrel_wit_ai_idtf: [rrel_entity];
+=> nrel_entity_possible_role: { rrel_entity };
+-> binoculars;
+-> camouflage_clothing;
+-> hunting_stand;
+-> radio_station;
+-> compass;;
+
+concept_weapon
+=> nrel_wit_ai_idtf: [rrel_entity];
+=> nrel_entity_possible_role: { rrel_entity };
+-> shotgun;
+-> rifle;
+-> hunting_knife;;
+
+concept_habitat
+=> nrel_wit_ai_idtf: [rrel_entity];
+=> nrel_entity_possible_role: { rrel_entity };
+-> forest;
+-> field;
+-> water_body;;
+
+concept_hunting_dog
+=> nrel_wit_ai_idtf: [rrel_entity];
+=> nrel_entity_possible_role: { rrel_entity };
+-> hunting_dog;
+-> hound;;
+
+concept_safety
+=> nrel_wit_ai_idtf: [rrel_entity];
+=> nrel_entity_possible_role: { rrel_entity };
+-> firearm_safety;
+-> group_safety;
+-> navigation_safety;;

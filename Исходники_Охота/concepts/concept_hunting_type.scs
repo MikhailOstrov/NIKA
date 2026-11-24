@@ -1,0 +1,7 @@
+concept_hunting_type
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [вид охоты] (* <- lang_ru;; *);;
+
+concept_hunting_type
+=> nrel_note: [Форма организации охоты по числу и взаимодействию участников.] (* <- lang_ru;; *);;

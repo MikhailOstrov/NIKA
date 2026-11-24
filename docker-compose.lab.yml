@@ -1,0 +1,19 @@
+services:
+  wit-mock:
+    build:
+      context: ./wit-mock
+      dockerfile: Dockerfile
+    container_name: nika-wit-mock
+    networks:
+      - nika
+
+  problem-solver:
+    volumes:
+      - ./nika.lab.ini:/nika/nika.ini
+    depends_on:
+      wit-mock:
+        condition: service_started
+
+networks:
+  nika:
+    name: nika_nika

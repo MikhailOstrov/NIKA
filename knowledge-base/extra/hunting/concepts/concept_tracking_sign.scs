@@ -1,0 +1,7 @@
+concept_tracking_sign
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [признак присутствия животного] (* <- lang_ru;; *);;
+
+concept_tracking_sign
+=> nrel_note: [Общий признак, по которому можно обсуждать присутствие животного.] (* <- lang_ru;; *);;

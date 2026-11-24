@@ -1,0 +1,7 @@
+concept_waterfowl
+<- sc_node_class;
+<= nrel_inclusion: concept_bird;
+=> nrel_main_idtf: [водоплавающая птица] (* <- lang_ru;; *);;
+
+concept_waterfowl
+=> nrel_note: [Водоплавающие птицы, рассматриваемые в учебном графе.] (* <- lang_ru;; *);;

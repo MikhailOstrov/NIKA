@@ -1,0 +1,7 @@
+concept_ammunition
+<- sc_node_class;
+<= nrel_inclusion: concept_hunting;
+=> nrel_main_idtf: [охотничий боеприпас] (* <- lang_ru;; *);;
+
+concept_ammunition
+=> nrel_note: [Обобщённая категория боеприпасов без технических инструкций.] (* <- lang_ru;; *);;
